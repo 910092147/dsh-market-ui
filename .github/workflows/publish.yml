@@ -12,9 +12,8 @@
 name: Publish to npm
 
 on:
-  push:
-    tags:
-      - 'v*'
+  # 先手动触发；配置好 NPM_TOKEN 后可以再加回 tag 触发
+  workflow_dispatch:
 
 jobs:
   publish:
