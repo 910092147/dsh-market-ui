@@ -1,0 +1,48 @@
+{
+  "format": 1,
+  "title": {
+    "zh": "DSH 插件市场",
+    "en": "DSH Plugin Market"
+  },
+  "description": {
+    "zh": "dsh-market-ui 提供的插件市场索引",
+    "en": "Plugin index published by dsh-market-ui"
+  },
+  "plugins": [
+    {
+      "name": "dsh-market-ui",
+      "title": {
+        "zh": "插件市场",
+        "en": "Plugin Market"
+      },
+      "description": {
+        "zh": "侧边栏插件市场：搜索、分类、安装/卸载/更新、兼容性检查、同类对比与功能矩阵。",
+        "en": "Sidebar plugin market: search, categories, install/uninstall/update, compatibility checks, comparisons and feature matrix."
+      },
+      "author": "zhou.j",
+      "homepage": "https://www.npmjs.com/package/dsh-market-ui",
+      "versions": [
+        {
+          "version": "0.2.5",
+          "publishTimestamp": 1792254532,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.0"
+          }
+        },
+        {
+          "version": "0.2.6",
+          "publishTimestamp": 1792303122,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.0"
+          }
+        }
+      ]
+    }
+  ]
+}

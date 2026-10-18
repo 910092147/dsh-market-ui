@@ -1,0 +1,37 @@
+# 自动发布到 npm：git push 带 v* tag 时触发
+#
+# 前置配置（一次性）：
+#   1. 在 GitHub 仓库 Settings → Secrets and variables → Actions 里加
+#      NPM_TOKEN（在本地 `npm token create --type=granular --publish --bypass-2fa`
+#      生成，然后复制进去）
+#   2. 首次发布需确保 package.json 的 version 与要打的 tag 一致
+#
+# 触发方式：
+#   git tag v0.1.0 && git push origin v0.1.0
+#   （或 push 到 main 分支但只在带 tag 时发布）
+name: Publish to npm
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org/
+
+      # 用 granular token 发布（bypass 2FA，CI 不需要验证码）
+      - name: Publish to npm
+        run: npm publish --provenance
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

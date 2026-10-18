@@ -1,0 +1,9 @@
+# dsh-market-ui bundle patch
+# 双面插件：host 半片（host.js，包主入口）提供 /api/plugin-market/* REST；
+# 浏览器半片（client.js，dsh.client 声明 + exports["./client"]）注册
+# 侧边栏「插件市场」面板（main 页）+ 设置 → 内置插件 → 「插件市场」页签。
+# 安装：dsh plugin --profile web add dsh-market-ui
+
+- insert:
+    - id: dsh-market-ui
+      name: 'dsh-market-ui'
