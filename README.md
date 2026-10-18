@@ -4,6 +4,8 @@ DeepSeek Harness 插件市场（社区开发）：在 Web GUI **侧边栏的「�
 （与「插件」页同级；或 设置 → 内置插件 → 插件市场）浏览 npm 社区插件，
 看简介与版本历史，一键安装 / 卸载 / 更新到当前 profile。
 
+GitHub：https://github.com/910092147/dsh-market-ui
+
 ## 工作方式（0.2.x）
 
 - **安装/卸载/更新走官方 `pluginManager` 服务**，不再 spawn `dsh plugin` CLI：
@@ -121,7 +123,7 @@ npm 页面：https://www.npmjs.com/package/dsh-market-ui
 包内自带一份 DSH 插件市场索引（format 1）`index.json`，可以直接作为官方「发现」页的索引源：
 
 ```
-https://cdn.jsdelivr.net/npm/dsh-market-ui@0.2.6/index.json
+https://cdn.jsdelivr.net/npm/dsh-market-ui@0.2.7/index.json
 ```
 
 在 **插件 → 发现 → 添加索引源** 里粘贴上面的 URL，就能在官方发现页看到本插件。

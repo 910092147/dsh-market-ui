@@ -20,7 +20,7 @@
         "en": "Sidebar plugin market: search, categories, install/uninstall/update, compatibility checks, comparisons and feature matrix."
       },
       "author": "zhou.j",
-      "homepage": "https://www.npmjs.com/package/dsh-market-ui",
+      "homepage": "https://github.com/910092147/dsh-market-ui",
       "versions": [
         {
           "version": "0.2.5",
@@ -35,6 +35,16 @@
         {
           "version": "0.2.6",
           "publishTimestamp": 1792303122,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.0"
+          }
+        },
+        {
+          "version": "0.2.7",
+          "publishTimestamp": 1792306759,
           "source": {
             "type": "npm"
           },

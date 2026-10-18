@@ -1,6 +1,6 @@
 {
   "name": "dsh-market-ui",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "DSH 插件市场：浏览/搜索 npm 社区插件，一键安装、卸载、更新、对比。DSH plugin marketplace for DeepSeek Harness.",
   "keywords": [
     "dsh",
@@ -51,5 +51,12 @@
     "node": ">=18"
   },
   "author": "zhou.j",
-  "homepage": "https://www.npmjs.com/package/dsh-market-ui"
+  "homepage": "https://github.com/910092147/dsh-market-ui#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/910092147/dsh-market-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/910092147/dsh-market-ui/issues"
+  }
 }
